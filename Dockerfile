@@ -1,9 +1,7 @@
 FROM caddy:builder AS builder
 
 RUN xcaddy build \
-    # --with github.com/caddyserver/nginx-adapter \
-    --with github.com/greenpau/caddy-auth-jwt \
-    --with github.com/greenpau/caddy-auth-portal \
+    --with github.com/greenpau/caddy-security \
     --with github.com/caddyserver/forwardproxy@caddy2 \
     --with github.com/caddy-dns/dnspod \
     --with github.com/caddy-dns/cloudflare \
