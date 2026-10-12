@@ -3,7 +3,6 @@ FROM caddy:builder AS builder
 RUN xcaddy build \
     --with github.com/greenpau/caddy-security@v1.4.1 \
     --with github.com/caddyserver/forwardproxy \
-    --with github.com/caddy-dns/dnspod \
     --with github.com/caddy-dns/cloudflare \
     --with github.com/caddyserver/replace-response \
     --with github.com/mholt/caddy-ratelimit \
